@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>📺 Videos · Números Racionales</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="videos.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-logo">♾️ Matemáticas</div>
+
+        <div class="nav-links">
+            <a href="index.html#objectives">Objetivos</a>
+            <a href="index.html#theory">Teoría</a>
+            <a href="index.html#activities">Actividades</a>
+            <a href="index.html#rubric">Rúbrica</a>
+            <a href="videos.html" class="active">📺 Videos</a>
+            <a href="juegos.html">🎮 Juegos</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="vid-hero">
+
+        <div class="vid-hero-content">
+
+            <span class="section-badge">
+                📺 Videoteca
+            </span>
+
+            <h1>
+                Aprende <span>viendo</span>
+            </h1>
+
+            <p>
+                Explicaciones visuales sobre números racionales.
+            </p>
+
+            <!-- SEARCH -->
+            <div class="vid-search-wrap">
+
+                <span class="search-icon">🔍</span>
+
+                <input type="text" id="vid-search" class="vid-search" placeholder="Buscar un video..."
+                    oninput="filterVideos(this.value)" />
+
+                <button class="search-clear" onclick="clearSearch()" id="search-clear-btn" style="display:none;">
+                    ✕
+                </button>
+
+            </div>
+
+            <!-- FILTERS -->
+            <div class="filter-pills">
+
+                <button class="pill active" onclick="filterByTag('all', this)">
+                    Todos
+                </button>
+
+                <button class="pill" onclick="filterByTag('conceptos', this)">
+                    Conceptos
+                </button>
+
+                <button class="pill" onclick="filterByTag('operaciones', this)">
+                    Operaciones
+                </button>
+
+                <button class="pill" onclick="filterByTag('aplicaciones', this)">
+                    Aplicaciones
+                </button>
+
+                <button class="pill" onclick="filterByTag('repaso', this)">
+                    Repaso
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED -->
+    <section id="vid-featured">
+
+        <div class="container">
+
+            <div class="featured-wrap">
+
+                <div class="featured-player">
+
+                    <div class="featured-thumb" id="featured-thumb" onclick="playFeatured()">
+
+                        <img src="https://img.youtube.com/vi/ql3lLSwsr98/maxresdefault.jpg" alt="Video principal" />
+
+                        <div class="featured-play-btn">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <iframe id="featured-iframe" src="" frameborder="0" allowfullscreen
+                        style="display:none;width:100%;height:100%;"></iframe>
+
+                </div>
+
+                <div class="featured-info">
+
+                    <span class="vid-tag tag-conceptos">
+                        Conceptos
+                    </span>
+
+                    <h2>
+                        Introducción a los Números Racionales
+                    </h2>
+
+                    <p>
+                        Aprende qué son los números racionales.
+                    </p>
+
+                    <div class="featured-actions">
+
+                        <button class="btn-primary" onclick="playFeatured()">
+                            ▶ Ver video
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GRID -->
+    <section id="vid-grid-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-badge">
+                    🎬 Biblioteca
+                </span>
+
+                <h2 class="section-title">
+                    Todos los Videos
+                </h2>
+
+                <p>
+                    <span id="vid-count">13 videos</span>
+                </p>
+
+            </div>
+
+            <div class="vid-grid" id="vid-grid">
+
+                <!-- VIDEO 1 -->
+                <div class="vid-card" data-id="v1" data-tags="conceptos"
+                    data-title="Introducción a los Números Racionales" onclick="openModal('v1')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/ql3lLSwsr98/mqdefault.jpg" alt="Video 1" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-conceptos">
+                            Conceptos
+                        </span>
+
+                        <h4>
+                            Introducción a los Números Racionales
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 2 -->
+                <div class="vid-card" data-id="v2" data-tags="conceptos" data-title="Fracciones Equivalentes"
+                    onclick="openModal('v2')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/B7I2E78IxsI/mqdefault.jpg" alt="Video 2" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-conceptos">
+                            Conceptos
+                        </span>
+
+                        <h4>
+                            Fracciones Equivalentes
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 3 -->
+                <div class="vid-card" data-id="v3" data-tags="operaciones" data-title="Suma y Resta"
+                    onclick="openModal('v3')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/MhgOBorWbhg/mqdefault.jpg" alt="Video 3" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-operaciones">
+                            Operaciones
+                        </span>
+
+                        <h4>
+                            Suma y Resta
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 4 -->
+                <div class="vid-card" data-id="v4" data-tags="operaciones" data-title="Multiplicación y División"
+                    onclick="openModal('v4')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/RPhaidW0dmY/mqdefault.jpg" alt="Video 4" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-operaciones">
+                            Operaciones
+                        </span>
+
+                        <h4>
+                            Multiplicación y División
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 5 -->
+                <div class="vid-card" data-id="v5" data-tags="conceptos" data-title="Recta Numérica"
+                    onclick="openModal('v5')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/4ywTWCaLmXE/mqdefault.jpg" alt="Video 5" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-conceptos">
+                            Conceptos
+                        </span>
+
+                        <h4>
+                            Recta Numérica
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 6 -->
+                <div class="vid-card" data-id="v6" data-tags="aplicaciones" data-title="Decimales y Porcentajes"
+                    onclick="openModal('v6')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/zBAOT2vUFPI/mqdefault.jpg" alt="Video 6" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-aplicaciones">
+                            Aplicaciones
+                        </span>
+
+                        <h4>
+                            Decimales y Porcentajes
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 7 -->
+                <div class="vid-card" data-id="v7" data-tags="aplicaciones" data-title="Problemas con Fracciones"
+                    onclick="openModal('v7')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/vimcE6ui6NQ/mqdefault.jpg" alt="Video 7" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-aplicaciones">
+                            Aplicaciones
+                        </span>
+
+                        <h4>
+                            Problemas con Fracciones
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 8 -->
+                <div class="vid-card" data-id="v8" data-tags="repaso" data-title="Repaso Completo"
+                    onclick="openModal('v8')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/kYyDc0XRUeg/mqdefault.jpg" alt="Video 8" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-repaso">
+                            Repaso
+                        </span>
+
+                        <h4>
+                            Repaso Completo
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 9 -->
+                <div class="vid-card" data-id="v9" data-tags="conceptos" data-title="Tipos de Fracciones"
+                    onclick="openModal('v9')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/1hfMRT5Ai-4/mqdefault.jpg" alt="Video 9" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-conceptos">
+                            Conceptos
+                        </span>
+
+                        <h4>
+                            Tipos de Fracciones
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 10 -->
+                <div class="vid-card" data-id="v10" data-tags="operaciones" data-title="Simplificación"
+                    onclick="openModal('v10')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/IdivcZZ1DEI/mqdefault.jpg" alt="Video 10" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-operaciones">
+                            Operaciones
+                        </span>
+
+                        <h4>
+                            Simplificación
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 11 -->
+                <div class="vid-card" data-id="v11" data-tags="operaciones" data-title="MCM y MCD"
+                    onclick="openModal('v11')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/1hfMRT5Ai-4/mqdefault.jpg" alt="Video 11" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-operaciones">
+                            Operaciones
+                        </span>
+
+                        <h4>
+                            MCM y MCD
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 12 -->
+                <div class="vid-card" data-id="v12" data-tags="aplicaciones" data-title="Fracciones en la Cocina"
+                    onclick="openModal('v12')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/8ME0-YAx9gE/mqdefault.jpg" alt="Video 12" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-aplicaciones">
+                            Aplicaciones
+                        </span>
+
+                        <h4>
+                            Fracciones en la Cocina
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- VIDEO 13 -->
+                <div class="vid-card" data-id="v13" data-tags="repaso" data-title="Ejercicios Resueltos"
+                    onclick="openModal('v13')">
+
+                    <div class="vid-thumb">
+
+                        <img src="https://img.youtube.com/vi/3hl-27cRmZ0/mqdefault.jpg" alt="Video 13" />
+
+                        <div class="vid-play">▶</div>
+
+                    </div>
+
+                    <div class="vid-info">
+
+                        <span class="vid-tag tag-repaso">
+                            Repaso
+                        </span>
+
+                        <h4>
+                            Ejercicios Resueltos
+                        </h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MODAL -->
+    <div id="vid-modal" class="vid-modal" onclick="closeModalBackdrop(event)">
+
+        <div class="vid-modal-box">
+
+            <div class="vid-modal-header">
+
+                <div>
+
+                    <span class="vid-tag" id="modal-tag"></span>
+
+                    <h3 id="modal-title">
+                        Video
+                    </h3>
+
+                </div>
+
+                <button class="modal-close-btn" onclick="closeModal()">
+                    ✕
+                </button>
+
+            </div>
+
+            <div class="vid-modal-player">
+
+                <iframe id="modal-iframe" src="" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="vid-modal-footer">
+
+                <p id="modal-desc"></p>
+
+                <button class="btn-primary" onclick="markCurrentWatched()">
+                    ✅ Marcar visto
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    <script src="videos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Números Racionales · Unidad Didáctica Virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-logo">♾️ Matemáticas</div>
+        <div class="nav-links">
+            <a href="#objectives" class="active">Objetivos</a>
+            <a href="#theory">Teoría</a>
+            <a href="#activities">Actividades</a>
+            <a href="#rubric">Rúbrica</a>
+            <a href="videos.html">📺 Videos</a>
+            <a href="juegos.html">🎮 Juegos</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bubbles" id="bubbles"></div>
+        <div class="hero-badge">📚 Unidad Didáctica Virtual · 7° Grado</div>
+        <h1>¡Exploremos los<br /><span>Números Racionales!</span></h1>
+        <p class="hero-sub">Descubre el fascinante mundo de las fracciones, decimales y sus operaciones. ¡Aprenderás que
+            las matemáticas están en todos lados!</p>
+        <div class="hero-btns">
+            <a href="#activities" class="btn-primary">🚀 ¡Empezar a aprender!</a>
+            <a href="#theory" class="btn-outline">📖 Ver el contenido</a>
+        </div>
+        <div class="hero-fraction-art">
+            <div class="fraction-card">
+                <div class="fraction-num">3</div>
+                <div class="fraction-line"></div>
+                <div class="fraction-den">4</div>
+                <div class="fraction-label">Fracción</div>
+            </div>
+            <div class="fraction-card">
+                <div class="fraction-num" style="font-size:1.4rem;">0.75</div>
+                <div class="fraction-line"></div>
+                <div class="fraction-den" style="font-size:0.85rem;opacity:.6">decimal</div>
+                <div class="fraction-label">Equivalente</div>
+            </div>
+            <div class="fraction-card">
+                <div class="fraction-num">75</div>
+                <div class="fraction-line"></div>
+                <div class="fraction-den">100</div>
+                <div class="fraction-label">Porcentaje</div>
+            </div>
+            <div class="fraction-card">
+                <div class="fraction-num">−</div>
+                <div class="fraction-line"></div>
+                <div class="fraction-den" style="font-size:1.3rem;">½</div>
+                <div class="fraction-label">Negativo</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJECTIVES -->
+    <section id="objectives">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🎯 ¿Qué aprenderás?</span>
+                <h2 class="section-title">Objetivos de Aprendizaje</h2>
+                <p class="section-desc">Al finalizar esta unidad, serás capaz de alcanzar los siguientes logros según
+                    los Estándares Básicos de Competencias (MEN).</p>
+            </div>
+            <div class="objectives-grid">
+                <div class="obj-card" style="border-color:#6B50E8;">
+                    <div class="obj-icon">🔢</div>
+                    <h3>Conceptual</h3>
+                    <p>Identificar y clasificar números racionales, reconocer su representación como fracción
+                        numerador/denominador y ubicarlos correctamente en la recta numérica.</p>
+                </div>
+                <div class="obj-card" style="border-color:#F5C842;">
+                    <div class="obj-icon">⚙️</div>
+                    <h3>Procedimental</h3>
+                    <p>Realizar correctamente las cuatro operaciones básicas con fracciones y números decimales: suma,
+                        resta, multiplicación y división.</p>
+                </div>
+                <div class="obj-card" style="border-color:#1CC9A0;">
+                    <div class="obj-icon">🌍</div>
+                    <h3>Contextual</h3>
+                    <p>Resolver situaciones problema de la vida cotidiana que involucren números racionales, interpretar
+                        y comunicar resultados con propiedad matemática.</p>
+                </div>
+                <div class="obj-card" style="border-color:#FF5C6A;">
+                    <div class="obj-icon">🤝</div>
+                    <h3>Actitudinal</h3>
+                    <p>Desarrollar confianza en el trabajo matemático, valorar la colaboración con compañeros y
+                        demostrar perseverancia ante retos desafiantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THEORY -->
+    <section id="theory">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📖 Marco Teórico</span>
+                <h2 class="section-title">Conceptos Clave</h2>
+                <p class="section-desc">Haz clic en cada tarjeta para explorar los temas. ¡Todo a tu ritmo!</p>
+            </div>
+
+            <div class="theory-grid">
+
+                <!-- Card 1: QUÉ ES UNA FRACCIÓN (con numerador/denominador visual) -->
+                <div class="theory-card">
+                    <div class="theory-header" onclick="toggleTheory(this)">
+                        <h3>🔢 ¿Qué es una Fracción?</h3>
+                        <div class="theory-toggle">▼</div>
+                    </div>
+                    <div class="theory-body">
+                        <div class="theory-body-inner">
+                            <p>Una <strong>fracción</strong> representa una parte de un entero. Se escribe con dos
+                                números separados por una línea horizontal:</p>
+
+                            <!-- Visual grande de fracción con etiquetas -->
+                            <div class="fraction-anatomy">
+                                <div class="anatomy-wrap">
+                                    <div class="anatomy-label-top">
+                                        <span class="anatomy-arrow-top">↓</span>
+                                        <span class="anatomy-tag numerator-tag">NUMERADOR<br><small>Cuántas partes
+                                                tomamos</small></span>
+                                    </div>
+                                    <div class="anatomy-frac">
+                                        <div class="anatomy-num">3</div>
+                                        <div class="anatomy-line"></div>
+                                        <div class="anatomy-den">4</div>
+                                    </div>
+                                    <div class="anatomy-label-bottom">
+                                        <span class="anatomy-arrow-bottom">↑</span>
+                                        <span class="anatomy-tag denominator-tag">DENOMINADOR<br><small>En cuántas
+                                                partes iguales se divide el entero</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Un <strong>número racional</strong> es todo número que puede expresarse como fracción
+                                <strong>numerador / denominador</strong>, donde el denominador es distinto de cero. El
+                                conjunto se denota ℚ.
+                            </p>
+
+                            <div class="anatomy-rule-box">
+                                <div class="rule-item">
+                                    <span class="rule-icon">✅</span>
+                                    <div><strong>El denominador NUNCA puede ser 0</strong> — dividir entre cero no tiene
+                                        sentido matemático.</div>
+                                </div>
+                                <div class="rule-item">
+                                    <span class="rule-icon">📌</span>
+                                    <div>Si el numerador es 0, la fracción vale <strong>0</strong> (ej: 0/5 = 0).</div>
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li>Todos los enteros son racionales: 5 = <span
+                                        class="fraction-inline"><span>5</span><span>1</span></span></li>
+                                <li>Decimales exactos: 0.5 = <span
+                                        class="fraction-inline"><span>1</span><span>2</span></span></li>
+                                <li>Decimales periódicos: 0.333… = <span
+                                        class="fraction-inline"><span>1</span><span>3</span></span></li>
+                            </ul>
+                            <div class="example-box">
+                                💡 <strong>Ejemplos:</strong>
+                                <span class="fraction-inline"><span>3</span><span>4</span></span>&nbsp;
+                                <span class="fraction-inline"><span>−7</span><span>2</span></span>&nbsp;
+                                0.6 &nbsp; −5 &nbsp; 1.25
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: CÓMO SE LEEN LAS FRACCIONES -->
+                <div class="theory-card">
+                    <div class="theory-header" onclick="toggleTheory(this)" style="background:#9B59B6;">
+                        <h3>🗣️ ¿Cómo se leen las Fracciones?</h3>
+                        <div class="theory-toggle">▼</div>
+                    </div>
+                    <div class="theory-body">
+                        <div class="theory-body-inner">
+                            <p>La manera de leer una fracción depende del <strong>denominador</strong>. Mira la tabla:
+                            </p>
+
+                            <div class="reading-table">
+                                <div class="rt-header">
+                                    <span>Fracción</span>
+                                    <span>Se lee…</span>
+                                    <span>Denominador</span>
+                                </div>
+                                <div class="rt-row">
+                                    <span class="rt-frac"><span
+                                            class="fraction-inline"><span>1</span><span>2</span></span></span>
+                                    <span class="rt-name">Un <strong>medio</strong></span>
+                                    <span class="rt-rule">2 → medio/medios</span>
+                                </div>
+                                <div class="rt-row rt-alt">
+                                    <span class="rt-frac"><span
+                                            class="fraction-inline"><span>2</span><span>3</span></span></span>
+                                    <span class="rt-name">Dos <strong>tercios</strong></span>
+                                    <span class="rt-rule">3 → tercio/tercios</span>
+                                </div>
+                                <div class="rt-row">
+                                    <span class="rt-frac"><span
+                                            class="fraction-inline"><span>3</span><span>4</span></span></span>
+                                    <span class="rt-name">Tres <strong>cuartos</strong></span>
+                                    <span class="rt-rule">4 → cuarto/cuartos</span>
+                                </div>
+                                <div class="rt-row rt-alt">
+                                    <span class="rt-frac"><span
+                                            class="fraction-inline"><span>4</span><span>5</span></span></span>
+                                    <span class="rt-name">Cuatro <strong>quintos</strong></span>
+                                    <span class="rt-rule">5 → quinto/quintos</span>
+                                </div>
+                                <div class="rt-row">
+                                    <span class="rt-frac"><span
+                                            class="fraction-inline"><span>5</span><span>6</span></span></span>
+                                    <span class="rt-name">Cinco <strong>sextos</strong></span>
+                                    <span class="rt-rule">6 → sexto/sextos</span>
+                                </div>
+                                <div class="rt-row rt-alt">
+                                    <span class="rt-frac"><span
+                                            class="fraction-inline"><span>3</span><span>7</span></span></span>
+                                    <span class="rt-name">Tres <strong>séptimos</strong></span>
+                                    <span class="rt-rule">7 → séptimo/séptimos</span>
+                                </div>
+                                <div class="rt-row">
+                                    <span class="rt-frac"><span
+                                            class="fraction-inline"><span>7</span><span>8</span></span></span>
+                                    <span class="rt-name">Siete <strong>octavos</strong></span>
+                                    <span class="rt-rule">8 → octavo/octavos</span>
+                                </div>
+                                <div class="rt-row rt-alt">
+                                    <span class="rt-frac"><span
+                                            class="fraction-inline"><span>2</span><span>9</span></span></span>
+                                    <span class="rt-name">Dos <strong>novenos</strong></span>
+                                    <span class="rt-rule">9 → noveno/novenos</span>
+                                </div>
+                                <div class="rt-row">
+                                    <span class="rt-frac"><span
+                                            class="fraction-inline"><span>9</span><span>10</span></span></span>
+                                    <span class="rt-name">Nueve <strong>décimos</strong></span>
+                                    <span class="rt-rule">10 → décimo/décimos</span>
+                                </div>
+                                <div class="rt-row rt-alt">
+                                    <span class="rt-frac"><span
+                                            class="fraction-inline"><span>3</span><span>12</span></span></span>
+                                    <span class="rt-name">Tres <strong>dozavos</strong></span>
+                                    <span class="rt-rule">12+ → dozavo, etc.</span>
+                                </div>
+                            </div>
+
+                            <div class="example-box" style="margin-top:14px;">
+                                💡 <strong>Regla general:</strong> Para denominadores mayores a 10, se dice el número
+                                seguido de "-avo/avos". Ej: <strong>15</strong> → quince<strong>avos</strong>,
+                                <strong>20</strong> → venti<strong>avos</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: CLASIFICACIÓN DE FRACCIONES -->
+                <div class="theory-card">
+                    <div class="theory-header" onclick="toggleTheory(this)" style="background:#E67E22;">
+                        <h3>📊 Tipos de Fracciones</h3>
+                        <div class="theory-toggle">▼</div>
+                    </div>
+                    <div class="theory-body">
+                        <div class="theory-body-inner">
+                            <p>Las fracciones se clasifican en tres tipos según la relación entre numerador y
+                                denominador:</p>
+
+                            <div class="tipos-mini-grid">
+                                <!-- Propia -->
+                                <div class="tipo-mini propia-mini">
+                                    <div class="tipo-mini-header">📦 Propia</div>
+                                    <div class="tipo-mini-body">
+                                        <div class="tipo-mini-visual">
+                                            <svg viewBox="0 0 120 100" width="120" height="100">
+                                                <circle cx="60" cy="52" r="36" fill="rgba(245,200,66,0.18)"
+                                                    stroke="rgba(245,200,66,0.6)" stroke-width="2" />
+                                                <path d="M60 52 L60 16 A36 36 0 0 1 91 70 Z"
+                                                    fill="rgba(245,200,66,0.65)" />
+                                                <path d="M60 52 L91 70 A36 36 0 0 1 29 70 Z"
+                                                    fill="rgba(245,200,66,0.50)" />
+                                                <line x1="60" y1="16" x2="60" y2="52" stroke="rgba(245,200,66,0.9)"
+                                                    stroke-width="1.5" />
+                                                <line x1="60" y1="52" x2="91" y2="70" stroke="rgba(245,200,66,0.9)"
+                                                    stroke-width="1.5" />
+                                                <line x1="60" y1="52" x2="29" y2="70" stroke="rgba(245,200,66,0.9)"
+                                                    stroke-width="1.5" />
+                                                <line x1="60" y1="52" x2="60" y2="88" stroke="rgba(245,200,66,0.4)"
+                                                    stroke-width="1.5" stroke-dasharray="4,3" />
+                                            </svg>
+                                        </div>
+                                        <div class="tipo-mini-frac" style="color:var(--secondary)">³⁄₄</div>
+                                        <p><strong>Numerador &lt; Denominador</strong></p>
+                                        <p>Su valor está entre 0 y 1.</p>
+                                        <div class="tipo-mini-ej">Ej: ¹⁄₄ · ³⁄₅ · ⁷⁄₈</div>
+                                    </div>
+                                </div>
+                                <!-- Impropia -->
+                                <div class="tipo-mini impropia-mini">
+                                    <div class="tipo-mini-header"
+                                        style="background:rgba(255,92,106,0.15);color:#FF5C6A;">📦 Impropia</div>
+                                    <div class="tipo-mini-body">
+                                        <div class="tipo-mini-visual">
+                                            <svg viewBox="0 0 140 100" width="140" height="100">
+                                                <circle cx="38" cy="52" r="28" fill="rgba(255,92,106,0.18)"
+                                                    stroke="rgba(255,92,106,0.5)" stroke-width="2" />
+                                                <path d="M38 52 L38 24 A28 28 0 1 1 38 80 Z"
+                                                    fill="rgba(255,92,106,0.55)" />
+                                                <circle cx="102" cy="52" r="28" fill="rgba(255,92,106,0.08)"
+                                                    stroke="rgba(255,92,106,0.3)" stroke-width="2" />
+                                                <path d="M102 52 L102 24 A28 28 0 0 1 130 52 Z"
+                                                    fill="rgba(255,92,106,0.45)" />
+                                                <line x1="102" y1="24" x2="102" y2="52" stroke="rgba(255,92,106,0.6)"
+                                                    stroke-width="1.5" />
+                                                <line x1="102" y1="52" x2="130" y2="52" stroke="rgba(255,92,106,0.6)"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </div>
+                                        <div class="tipo-mini-frac" style="color:#FF5C6A">⁵⁄₃</div>
+                                        <p><strong>Numerador ≥ Denominador</strong></p>
+                                        <p>Su valor es mayor o igual a 1.</p>
+                                        <div class="tipo-mini-ej" style="color:#ff7b87">Ej: ⁵⁄₃ · ⁷⁄₄ · ⁹⁄₉</div>
+                                    </div>
+                                </div>
+                                <!-- Mixta -->
+                                <div class="tipo-mini mixta-mini">
+                                    <div class="tipo-mini-header"
+                                        style="background:rgba(28,201,160,0.15);color:#1CC9A0;">📦 Mixta</div>
+                                    <div class="tipo-mini-body">
+                                        <div class="tipo-mini-visual">
+                                            <svg viewBox="0 0 140 100" width="140" height="100">
+                                                <rect x="8" y="24" width="50" height="55" rx="6"
+                                                    fill="rgba(28,201,160,0.45)" stroke="rgba(28,201,160,0.6)"
+                                                    stroke-width="2" />
+                                                <text x="33" y="57" text-anchor="middle" font-size="22"
+                                                    fill="rgba(28,201,160,0.9)" font-family="Syne"
+                                                    font-weight="800">1</text>
+                                                <text x="80" y="48" font-size="20" fill="rgba(28,201,160,0.7)"
+                                                    font-family="Syne" font-weight="800">+</text>
+                                                <circle cx="112" cy="50" r="24" fill="rgba(28,201,160,0.1)"
+                                                    stroke="rgba(28,201,160,0.4)" stroke-width="2" />
+                                                <path d="M112 50 L112 26 A24 24 0 0 1 136 50 Z"
+                                                    fill="rgba(28,201,160,0.5)" />
+                                                <line x1="112" y1="26" x2="112" y2="50" stroke="rgba(28,201,160,0.6)"
+                                                    stroke-width="1.5" />
+                                                <line x1="112" y1="50" x2="136" y2="50" stroke="rgba(28,201,160,0.6)"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </div>
+                                        <div class="tipo-mini-frac" style="color:#1CC9A0">1²⁄₃</div>
+                                        <p><strong>Entero + Fracción propia</strong></p>
+                                        <p>Equivalente a una fracción impropia.</p>
+                                        <div class="tipo-mini-ej" style="color:#1cc9a0">Ej: 2¹⁄₄ · 3²⁄₅ · 1⁷⁄₈</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conversión impropia ↔ mixta -->
+                            <div class="conversion-mini-strip">
+                                <div class="cms-step">
+                                    <div class="cms-title">🔄 Impropia → Mixta</div>
+                                    <div class="cms-formula">⁷⁄₃ → divide: 7÷3 = <strong>2</strong> resto
+                                        <strong>1</strong> → <strong>2¹⁄₃</strong>
+                                    </div>
+                                </div>
+                                <div class="cms-arrow">⇄</div>
+                                <div class="cms-step">
+                                    <div class="cms-title">🔄 Mixta → Impropia</div>
+                                    <div class="cms-formula">2¹⁄₃ → (2×3+1)/3 = <strong>⁷⁄₃</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: FRACCIONES HOMOGÉNEAS Y HETEROGÉNEAS -->
+                <div class="theory-card">
+                    <div class="theory-header" onclick="toggleTheory(this)" style="background:#16A085;">
+                        <h3>🔗 Fracciones Homogéneas y Heterogéneas</h3>
+                        <div class="theory-toggle">▼</div>
+                    </div>
+                    <div class="theory-body">
+                        <div class="theory-body-inner">
+                            <div class="homo-hetero-grid">
+                                <div class="hh-card homo-card">
+                                    <div class="hh-title">🟢 Homogéneas</div>
+                                    <p>Fracciones que tienen el <strong>mismo denominador</strong>.</p>
+                                    <div class="hh-example">
+                                        <span class="fraction-inline"><span>1</span><span>5</span></span>
+                                        <span class="fraction-inline"><span>3</span><span>5</span></span>
+                                        <span class="fraction-inline"><span>4</span><span>5</span></span>
+                                    </div>
+                                    <p style="font-size:.85rem;color:var(--text-light);margin-top:8px;">↳ Denominador
+                                        igual: <strong>5</strong> en todos</p>
+                                    <div class="hh-ventaja">✅ Son más fáciles de operar: solo se suman o restan los
+                                        numeradores.</div>
+                                </div>
+                                <div class="hh-card hetero-card">
+                                    <div class="hh-title">🔴 Heterogéneas</div>
+                                    <p>Fracciones que tienen <strong>diferente denominador</strong>.</p>
+                                    <div class="hh-example">
+                                        <span class="fraction-inline"><span>1</span><span>2</span></span>
+                                        <span class="fraction-inline"><span>2</span><span>3</span></span>
+                                        <span class="fraction-inline"><span>3</span><span>4</span></span>
+                                    </div>
+                                    <p style="font-size:.85rem;color:var(--text-light);margin-top:8px;">↳ Denominadores
+                                        distintos: 2, 3 y 4</p>
+                                    <div class="hh-ventaja"
+                                        style="background:rgba(255,92,106,.08);border-color:rgba(255,92,106,.2);">⚠️
+                                        Para operar hay que hallar el MCM primero y convertirlas en homogéneas.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: FRACCIONES EQUIVALENTES -->
+                <div class="theory-card">
+                    <div class="theory-header" onclick="toggleTheory(this)" style="background:#E67E22;">
+                        <h3>📊 Fracciones Equivalentes</h3>
+                        <div class="theory-toggle">▼</div>
+                    </div>
+                    <div class="theory-body">
+                        <div class="theory-body-inner">
+                            <p>Dos fracciones son <strong>equivalentes</strong> si representan la misma cantidad. Se
+                                obtienen multiplicando o dividiendo por el mismo número.</p>
+
+                            <p><strong>📈 Amplificación (sin simplificar):</strong> Multiplica numerador y denominador
+                                por el mismo número.</p>
+                            <div class="equiv-steps">
+                                <div class="equiv-step">
+                                    <span class="fraction-inline"><span>1</span><span>2</span></span>
+                                    <span class="equiv-op">×2/×2</span>
+                                    <span class="fraction-inline"><span>2</span><span>4</span></span>
+                                    <span class="equiv-op">×3/×3</span>
+                                    <span class="fraction-inline"><span>6</span><span>12</span></span>
+                                    <span class="equiv-op">×5/×5</span>
+                                    <span class="fraction-inline"><span>30</span><span>60</span></span>
+                                </div>
+                                <p class="equiv-note">↳ Todas representan la misma cantidad: la mitad.</p>
+                            </div>
+
+                            <p style="margin-top:12px;"><strong>📉 Simplificación:</strong> Divide por el MCD (Máximo
+                                Común Divisor) hasta llegar a la fracción irreducible.</p>
+                            <div class="simplify-steps">
+                                <div class="simp-step">
+                                    <div class="simp-num">Fracción original</div>
+                                    <span class="fraction-inline"
+                                        style="font-size:1rem;"><span>12</span><span>18</span></span>
+                                </div>
+                                <div class="simp-arrow">→</div>
+                                <div class="simp-step">
+                                    <div class="simp-num">MCD(12, 18) = 6</div>
+                                    <div style="font-size:.85rem;color:var(--text-light);">12÷6 = 2 &nbsp;|&nbsp; 18÷6 =
+                                        3</div>
+                                </div>
+                                <div class="simp-arrow">→</div>
+                                <div class="simp-step">
+                                    <div class="simp-num">Resultado</div>
+                                    <span class="fraction-inline"
+                                        style="font-size:1rem;color:var(--accent2);"><span>2</span><span>3</span></span>
+                                </div>
+                            </div>
+
+                            <div class="example-box" style="margin-top:12px;">
+                                💡 Simplificar <span class="fraction-inline"><span>12</span><span>18</span></span>:
+                                MCD(12,18)=6 → <strong><span
+                                        class="fraction-inline"><span>2</span><span>3</span></span></strong> ←
+                                Irreducible
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: SUMA Y RESTA -->
+                <div class="theory-card">
+                    <div class="theory-header" onclick="toggleTheory(this)" style="background:#27AE60;">
+                        <h3>➕➖ Suma y Resta de Fracciones</h3>
+                        <div class="theory-toggle">▼</div>
+                    </div>
+                    <div class="theory-body">
+                        <div class="theory-body-inner">
+
+                            <div class="op-subsection">
+                                <div class="op-subtitle">🟢 Caso 1: Fracciones Homogéneas (mismo denominador)</div>
+                                <p>Suma o resta los numeradores y <strong>conserva el denominador</strong>. ¡Es el caso
+                                    más sencillo!</p>
+
+                                <div class="method-box">
+                                    <div class="method-title">Método único:</div>
+                                    <div class="method-step">
+                                        <span class="fraction-inline"><span>3</span><span>7</span></span>
+                                        <span class="method-op">+</span>
+                                        <span class="fraction-inline"><span>2</span><span>7</span></span>
+                                        <span class="method-op">=</span>
+                                        <span class="fraction-inline"><span>3+2</span><span>7</span></span>
+                                        <span class="method-op">=</span>
+                                        <span class="fraction-inline"
+                                            style="color:var(--accent2);"><span>5</span><span>7</span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="op-subsection" style="margin-top:18px;">
+                                <div class="op-subtitle">🔴 Caso 2: Fracciones Heterogéneas (diferente denominador)
+                                </div>
+                                <p>Hay <strong>3 métodos</strong> para resolverlas. ¡Elige el que más te guste!</p>
+
+                                <div class="methods-accordion">
+
+                                    <!-- Método 1 -->
+                                    <div class="method-item">
+                                        <div class="method-header" onclick="toggleMethod(this)">
+                                            <span>📌 Método 1: MCM (Mínimo Común Múltiplo)</span>
+                                            <span class="m-toggle">▼</span>
+                                        </div>
+                                        <div class="method-body">
+                                            <p>Halla el MCM de los denominadores, convierte cada fracción y luego suma.
+                                            </p>
+                                            <div class="method-example">
+                                                <div class="me-step"><strong>Ej:</strong> <span
+                                                        class="fraction-inline"><span>1</span><span>3</span></span> +
+                                                    <span class="fraction-inline"><span>1</span><span>4</span></span>
+                                                </div>
+                                                <div class="me-step">MCM(3, 4) = <strong>12</strong></div>
+                                                <div class="me-step"><span
+                                                        class="fraction-inline"><span>1×4</span><span>12</span></span> +
+                                                    <span class="fraction-inline"><span>1×3</span><span>12</span></span>
+                                                    = <span class="fraction-inline"><span>4</span><span>12</span></span>
+                                                    + <span class="fraction-inline"><span>3</span><span>12</span></span>
+                                                </div>
+                                                <div class="me-step" style="color:var(--accent2);font-weight:700;">=
+                                                    <span class="fraction-inline"><span>7</span><span>12</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Método 2 -->
+                                    <div class="method-item">
+                                        <div class="method-header" onclick="toggleMethod(this)">
+                                            <span>📌 Método 2: Productos cruzados</span>
+                                            <span class="m-toggle">▼</span>
+                                        </div>
+                                        <div class="method-body">
+                                            <p>Multiplica en cruz para los numeradores y multiplica denominadores entre
+                                                sí.</p>
+                                            <div class="method-example">
+                                                <div class="me-step"><strong>Ej:</strong> <span
+                                                        class="fraction-inline"><span>1</span><span>3</span></span> +
+                                                    <span class="fraction-inline"><span>1</span><span>4</span></span>
+                                                </div>
+                                                <div class="me-step">Numerador: (1×4) + (1×3) = 4 + 3 =
+                                                    <strong>7</strong>
+                                                </div>
+                                                <div class="me-step">Denominador: 3 × 4 = <strong>12</strong></div>
+                                                <div class="me-step" style="color:var(--accent2);font-weight:700;">=
+                                                    <span class="fraction-inline"><span>7</span><span>12</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Método 3 -->
+                                    <div class="method-item">
+                                        <div class="method-header" onclick="toggleMethod(this)">
+                                            <span>📌 Método 3: Convertir a decimales</span>
+                                            <span class="m-toggle">▼</span>
+                                        </div>
+                                        <div class="method-body">
+                                            <p>Divide cada fracción para obtener su decimal y suma. Útil para verificar.
+                                            </p>
+                                            <div class="method-example">
+                                                <div class="me-step"><strong>Ej:</strong> <span
+                                                        class="fraction-inline"><span>1</span><span>3</span></span> +
+                                                    <span class="fraction-inline"><span>1</span><span>4</span></span>
+                                                </div>
+                                                <div class="me-step">1÷3 = 0.333… &nbsp;|&nbsp; 1÷4 = 0.25</div>
+                                                <div class="me-step">0.333… + 0.25 = 0.583…</div>
+                                                <div class="me-step" style="color:var(--accent2);font-weight:700;">=
+                                                    7/12 ≈ 0.583 ✅</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: MULTIPLICACIÓN Y DIVISIÓN (con zigzag) -->
+                <div class="theory-card">
+                    <div class="theory-header" onclick="toggleTheory(this)" style="background:#E84393;">
+                        <h3>✖️➗ Multiplicación y División</h3>
+                        <div class="theory-toggle">▼</div>
+                    </div>
+                    <div class="theory-body">
+                        <div class="theory-body-inner">
+                            <div class="op-subsection">
+                                <div class="op-subtitle">✖️ Multiplicación</div>
+                                <p>Numerador × numerador, denominador × denominador.</p>
+                                <div class="method-box">
+                                    <span class="fraction-inline"><span>2</span><span>3</span></span> ×
+                                    <span class="fraction-inline"><span>4</span><span>5</span></span> =
+                                    <span class="fraction-inline"><span>2×4</span><span>3×5</span></span> =
+                                    <span class="fraction-inline"
+                                        style="color:var(--accent2);"><span>8</span><span>15</span></span>
+                                </div>
+                            </div>
+
+                            <div class="op-subsection" style="margin-top:18px;">
+                                <div class="op-subtitle">➗ División — Método clásico (fracción inversa)</div>
+                                <p>Multiplica la primera fracción por la <strong>inversa</strong> de la segunda
+                                    (invierte el segundo término).</p>
+                                <div class="example-box">
+                                    💡 <span class="fraction-inline"><span>3</span><span>4</span></span> ÷
+                                    <span class="fraction-inline"><span>2</span><span>5</span></span> =
+                                    <span class="fraction-inline"><span>3</span><span>4</span></span> ×
+                                    <span class="fraction-inline"><span>5</span><span>2</span></span> =
+                                    <strong><span class="fraction-inline"><span>15</span><span>8</span></span></strong>
+                                </div>
+                            </div>
+
+                            <div class="op-subsection" style="margin-top:18px;">
+                                <div class="op-subtitle">⚡ División — Método Zigzag</div>
+                                <p>El método <strong>Zigzag</strong> es una forma visual de dividir fracciones. Sigue la
+                                    trayectoria en Z:</p>
+
+                                <div class="zigzag-container">
+                                    <div class="zigzag-visual">
+                                        <div class="zz-frac-box">
+                                            <div class="zz-num zz-highlight-a">3</div>
+                                            <div class="zz-line"></div>
+                                            <div class="zz-den zz-highlight-b">4</div>
+                                        </div>
+                                        <div class="zz-div-sign">÷</div>
+                                        <div class="zz-frac-box">
+                                            <div class="zz-num zz-highlight-c">2</div>
+                                            <div class="zz-line"></div>
+                                            <div class="zz-den zz-highlight-d">5</div>
+                                        </div>
+                                        <div class="zz-equals">=</div>
+                                        <div class="zz-frac-box result-box">
+                                            <div class="zz-num">3×5</div>
+                                            <div class="zz-line"></div>
+                                            <div class="zz-den">4×2</div>
+                                        </div>
+                                        <div class="zz-equals">=</div>
+                                        <div class="zz-frac-box result-box" style="border-color:var(--accent2);">
+                                            <div class="zz-num" style="color:var(--accent2);">15</div>
+                                            <div class="zz-line" style="background:var(--accent2);"></div>
+                                            <div class="zz-den" style="color:var(--accent2);">8</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="zigzag-steps">
+                                        <div class="zz-step"><span class="zz-step-num">1</span> Traza la Z: conecta el
+                                            <strong>numerador izquierdo</strong> con el <strong>denominador
+                                                derecho</strong> → se multiplican en el nuevo numerador.
+                                        </div>
+                                        <div class="zz-step"><span class="zz-step-num">2</span> El <strong>denominador
+                                                izquierdo</strong> se multiplica con el <strong>numerador
+                                                derecho</strong> → nuevo denominador.</div>
+                                        <div class="zz-step"><span class="zz-step-num">3</span> Simplifica si es
+                                            posible: 15/8 es irreducible ✅</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8: RECTA NUMÉRICA -->
+                <div class="theory-card">
+                    <div class="theory-header" onclick="toggleTheory(this)" style="background:#8E44AD;">
+                        <h3>📍 Racionales en la Recta Numérica</h3>
+                        <div class="theory-toggle">▼</div>
+                    </div>
+                    <div class="theory-body">
+                        <div class="theory-body-inner">
+                            <p>Los números racionales son <strong>densos</strong>: entre dos racionales siempre hay
+                                otro. Se ubican dividiendo los segmentos en partes iguales según el denominador.</p>
+                            <div class="number-line-wrap">
+                                <svg viewBox="0 0 500 80" xmlns="http://www.w3.org/2000/svg"
+                                    style="width:100%;max-width:480px;display:block;margin:0 auto;">
+                                    <line x1="20" y1="40" x2="480" y2="40" stroke="#4F35D2" stroke-width="3" />
+                                    <polygon points="480,35 490,40 480,45" fill="#4F35D2" />
+                                    <line x1="70" y1="33" x2="70" y2="47" stroke="#4F35D2" stroke-width="2" />
+                                    <line x1="145" y1="33" x2="145" y2="47" stroke="#4F35D2" stroke-width="2" />
+                                    <line x1="220" y1="28" x2="220" y2="52" stroke="#120D2E" stroke-width="3" />
+                                    <line x1="295" y1="33" x2="295" y2="47" stroke="#4F35D2" stroke-width="2" />
+                                    <line x1="370" y1="28" x2="370" y2="52" stroke="#120D2E" stroke-width="3" />
+                                    <circle cx="107" cy="40" r="6" fill="#F5C842" />
+                                    <circle cx="182" cy="40" r="6" fill="#FF5C6A" />
+                                    <circle cx="332" cy="40" r="6" fill="#1CC9A0" />
+                                    <text x="62" y="25" font-size="11" fill="#4F35D2" text-anchor="middle"
+                                        font-family="DM Sans">-1</text>
+                                    <text x="137" y="25" font-size="11" fill="#4F35D2" text-anchor="middle"
+                                        font-family="DM Sans">-½</text>
+                                    <text x="218" y="22" font-size="12" fill="#120D2E" text-anchor="middle"
+                                        font-weight="bold" font-family="DM Sans">0</text>
+                                    <text x="287" y="25" font-size="11" fill="#4F35D2" text-anchor="middle"
+                                        font-family="DM Sans">¾</text>
+                                    <text x="368" y="22" font-size="12" fill="#120D2E" text-anchor="middle"
+                                        font-weight="bold" font-family="DM Sans">1</text>
+                                    <text x="107" y="62" font-size="10" fill="#F5C842" text-anchor="middle"
+                                        font-family="DM Sans">-¾</text>
+                                    <text x="182" y="62" font-size="10" fill="#FF5C6A" text-anchor="middle"
+                                        font-family="DM Sans">-¼</text>
+                                    <text x="332" y="62" font-size="10" fill="#1CC9A0" text-anchor="middle"
+                                        font-family="DM Sans">¼</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9: FRACCIÓN, DECIMAL, PORCENTAJE -->
+                <div class="theory-card">
+                    <div class="theory-header" onclick="toggleTheory(this)" style="background:#2980B9;">
+                        <h3>🔄 Fracciones, Decimales y Porcentajes</h3>
+                        <div class="theory-toggle">▼</div>
+                    </div>
+                    <div class="theory-body">
+                        <div class="theory-body-inner">
+                            <p>Los números racionales pueden expresarse de tres formas equivalentes:</p>
+                            <ul>
+                                <li><strong>Fracción → Decimal:</strong> divide numerador entre denominador. <span
+                                        class="fraction-inline"><span>3</span><span>4</span></span> = 0.75</li>
+                                <li><strong>Decimal → Fracción:</strong> escribe sobre su potencia de 10. 0.6 = <span
+                                        class="fraction-inline"><span>6</span><span>10</span></span> = <span
+                                        class="fraction-inline"><span>3</span><span>5</span></span></li>
+                                <li><strong>Fracción → Porcentaje:</strong> multiplica por 100. <span
+                                        class="fraction-inline"><span>1</span><span>4</span></span> × 100 = 25%</li>
+                            </ul>
+                            <div class="example-box">
+                                💡 <strong>Triada:</strong> &nbsp;
+                                <span class="fraction-inline"><span>1</span><span>2</span></span> = 0.5 = 50%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /theory-grid -->
+
+            <!-- Video placeholder -->
+            <div class="video-placeholder" onclick="openVideo()" style="margin-top:48px;">
+                <div class="play-btn">▶</div>
+                <h3>📺 Video Explicativo: Números Racionales</h3>
+                <p>Haz clic para ver una explicación visual paso a paso</p>
+            </div>
+
+            <!-- Video modal -->
+            <div id="video-modal"
+                style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:9999;align-items:center;justify-content:center;padding:20px;">
+                <div
+                    style="background:#000;border-radius:20px;overflow:hidden;max-width:840px;width:100%;position:relative;">
+                    <button onclick="closeVideo()"
+                        style="position:absolute;top:12px;right:12px;background:rgba(255,255,255,0.15);border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1rem;z-index:2;color:#fff;display:flex;align-items:center;justify-content:center;">✕</button>
+                    <iframe id="yt-frame" width="100%" height="440" src="" frameborder="0" allowfullscreen
+                        style="display:block;"></iframe>
+                </div>
+            </div>
+
+        </div><!-- /container -->
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🎮 Secuencia Didáctica</span>
+                <h2 class="section-title">¡Hora de Practicar!</h2>
+                <p class="section-desc">Tres momentos de aprendizaje diseñados para ti. ¡Sigue el orden y conquista cada
+                    reto!</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="activities-tabs">
+                <button class="tab-btn active" onclick="showTab('inicio',this)">🔍 Inicio — Presaberes</button>
+                <button class="tab-btn" onclick="showTab('desarrollo',this)">⚙️ Desarrollo — Práctica</button>
+                <button class="tab-btn" onclick="showTab('cierre',this)">🏆 Cierre — Evaluación</button>
+            </div>
+
+            <!-- TAB 1: PRESABERES -->
+            <div class="tab-panel active" id="tab-inicio">
+                <div class="presaberes-card">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🧠</div>
+                    <h3>¿Qué sabes ya?</h3>
+                    <p>Antes de comenzar, exploremos tus conocimientos previos. Responde con confianza, ¡no hay
+                        respuestas malas al inicio! 😊</p>
+
+                    <div id="presaberes-quiz">
+                        <!-- Q1 -->
+                        <div class="presaberes-q" id="pq-0">
+                            <div class="question">1. Si tienes una pizza y la divides en 4 partes iguales y te comes 3,
+                                ¿qué fracción comiste?</div>
+                            <div class="options">
+                                <button class="option" onclick="checkPresaberes(this, 0, false)">A) 4/3</button>
+                                <button class="option" onclick="checkPresaberes(this, 0, true)">B) 3/4</button>
+                                <button class="option" onclick="checkPresaberes(this, 0, false)">C) 1/4</button>
+                                <button class="option" onclick="checkPresaberes(this, 0, false)">D) 3/3</button>
+                            </div>
+                            <div class="feedback-msg" id="pfb-0"></div>
+                        </div>
+
+                        <!-- Q2: tipo numerador/denominador como la foto -->
+                        <div class="presaberes-q" id="pq-1" style="display:none;">
+                            <div class="question">2. En la fracción ⁷⁄₉, el __________ es 7 y el __________ es 9.</div>
+                            <div class="options">
+                                <button class="option" onclick="checkPresaberes(this, 1, true)">A) numerador,
+                                    denominador</button>
+                                <button class="option" onclick="checkPresaberes(this, 1, false)">B) denominador,
+                                    numerador</button>
+                                <button class="option" onclick="checkPresaberes(this, 1, false)">C) divisor,
+                                    dividendo</button>
+                                <button class="option" onclick="checkPresaberes(this, 1, false)">D) entero,
+                                    parte</button>
+                            </div>
+                            <div class="feedback-msg" id="pfb-1"></div>
+                        </div>
+
+                        <!-- Q3: tipo de la foto -->
+                        <div class="presaberes-q" id="pq-2" style="display:none;">
+                            <div class="question">3. En la fracción ³⁄₈, el denominador es ___ y el numerador es ___.
+                            </div>
+                            <div class="options">
+                                <button class="option" onclick="checkPresaberes(this, 2, true)">A) 8 ; 3</button>
+                                <button class="option" onclick="checkPresaberes(this, 2, false)">B) 3 ; 8</button>
+                                <button class="option" onclick="checkPresaberes(this, 2, false)">C) 8 ; 8</button>
+                                <button class="option" onclick="checkPresaberes(this, 2, false)">D) 3 ; 3</button>
+                            </div>
+                            <div class="feedback-msg" id="pfb-2"></div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="presaberes-q" id="pq-3" style="display:none;">
+                            <div class="question">4. ¿Cuál de estos números NO es un número racional?</div>
+                            <div class="options">
+                                <button class="option" onclick="checkPresaberes(this, 3, false)">A) 0.5</button>
+                                <button class="option" onclick="checkPresaberes(this, 3, false)">B) −7</button>
+                                <button class="option" onclick="checkPresaberes(this, 3, true)">C) √2</button>
+                                <button class="option" onclick="checkPresaberes(this, 3, false)">D) 1/3</button>
+                            </div>
+                            <div class="feedback-msg" id="pfb-3"></div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="presaberes-q" id="pq-4" style="display:none;">
+                            <div class="question">5. ¿Qué fracción corresponde al decimal 0.25?</div>
+                            <div class="options">
+                                <button class="option" onclick="checkPresaberes(this, 4, false)">A) 2/5</button>
+                                <button class="option" onclick="checkPresaberes(this, 4, true)">B) 1/4</button>
+                                <button class="option" onclick="checkPresaberes(this, 4, false)">C) 25/10</button>
+                                <button class="option" onclick="checkPresaberes(this, 4, false)">D) 1/25</button>
+                            </div>
+                            <div class="feedback-msg" id="pfb-4"></div>
+                        </div>
+
+                        <!-- Q6: ¿Cómo se lee? -->
+                        <div class="presaberes-q" id="pq-5" style="display:none;">
+                            <div class="question">6. ¿Cómo se lee correctamente la fracción ³⁄₄?</div>
+                            <div class="options">
+                                <button class="option" onclick="checkPresaberes(this, 5, false)">A) Tres
+                                    cuatros</button>
+                                <button class="option" onclick="checkPresaberes(this, 5, true)">B) Tres cuartos</button>
+                                <button class="option" onclick="checkPresaberes(this, 5, false)">C) Cuatro
+                                    tercios</button>
+                                <button class="option" onclick="checkPresaberes(this, 5, false)">D) Tres medios</button>
+                            </div>
+                            <div class="feedback-msg" id="pfb-5"></div>
+                        </div>
+
+                        <!-- Q7: clasificación -->
+                        <div class="presaberes-q" id="pq-6" style="display:none;">
+                            <div class="question">7. La fracción ⁷⁄₄ es:</div>
+                            <div class="options">
+                                <button class="option" onclick="checkPresaberes(this, 6, false)">A) Fracción
+                                    propia</button>
+                                <button class="option" onclick="checkPresaberes(this, 6, true)">B) Fracción
+                                    impropia</button>
+                                <button class="option" onclick="checkPresaberes(this, 6, false)">C) Número
+                                    mixto</button>
+                                <button class="option" onclick="checkPresaberes(this, 6, false)">D) Número
+                                    entero</button>
+                            </div>
+                            <div class="feedback-msg" id="pfb-6"></div>
+                        </div>
+                    </div><!-- /presaberes-quiz -->
+
+                    <div id="presaberes-result"></div>
+                </div>
+            </div><!-- /tab-inicio -->
+
+            <!-- TAB 2: DESARROLLO -->
+            <div class="tab-panel" id="tab-desarrollo">
+                <div class="dev-grid">
+                    <!-- Card: Operaciones rápidas -->
+                    <div class="dev-card">
+                        <div class="dev-card-header" style="background:var(--primary);">⚡ Operaciones Rápidas</div>
+                        <div class="dev-card-body">
+                            <div class="exercise-row">
+                                <label>1. <span class="fraction-inline"
+                                        style="font-size:.82rem;"><span>1</span><span>3</span></span> + <span
+                                        class="fraction-inline"
+                                        style="font-size:.82rem;"><span>1</span><span>6</span></span> = <em
+                                        style="font-size:.78rem;color:var(--text-muted)"> (ej: 1/2)</em></label>
+                                <input class="math-input" id="op1" placeholder="ej: 1/2"
+                                    oninput="evalFrac('op1','1/2','fb1')">
+                                <div class="inline-feedback" id="fb1"></div>
+                            </div>
+                            <div class="exercise-row">
+                                <label>2. <span class="fraction-inline"
+                                        style="font-size:.82rem;"><span>3</span><span>4</span></span> − <span
+                                        class="fraction-inline"
+                                        style="font-size:.82rem;"><span>1</span><span>8</span></span> =</label>
+                                <input class="math-input" id="op2" placeholder="ej: 5/8"
+                                    oninput="evalFrac('op2','5/8','fb2')">
+                                <div class="inline-feedback" id="fb2"></div>
+                            </div>
+                            <div class="exercise-row">
+                                <label>3. <span class="fraction-inline"
+                                        style="font-size:.82rem;"><span>2</span><span>3</span></span> × <span
+                                        class="fraction-inline"
+                                        style="font-size:.82rem;"><span>3</span><span>5</span></span> =</label>
+                                <input class="math-input" id="op3" placeholder="ej: 2/5"
+                                    oninput="evalFrac('op3','2/5','fb3')">
+                                <div class="inline-feedback" id="fb3"></div>
+                            </div>
+                            <div class="exercise-row">
+                                <label>4. <span class="fraction-inline"
+                                        style="font-size:.82rem;"><span>4</span><span>5</span></span> ÷ <span
+                                        class="fraction-inline"
+                                        style="font-size:.82rem;"><span>2</span><span>3</span></span> =</label>
+                                <input class="math-input" id="op4" placeholder="ej: 6/5"
+                                    oninput="evalFrac('op4','6/5','fb4')">
+                                <div class="inline-feedback" id="fb4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card: Problemas contextuales -->
+                    <div class="dev-card">
+                        <div class="dev-card-header" style="background:#E67E22;">🌍 Problema del Mundo Real</div>
+                        <div class="dev-card-body">
+                            <div class="context-problem">
+                                <div class="problem-icon">🍕</div>
+                                <h4>¡La fiesta de cumpleaños!</h4>
+                                <p>Mariana compró 3 pizzas. Sus amigos se comieron <strong>5/8</strong> de la primera,
+                                    <strong>3/4</strong> de la segunda y <strong>1/2</strong> de la tercera. ¿Cuántas
+                                    pizzas en total? Escribe como fracción simplificada.
+                                </p>
+                                <div class="answer-row">
+                                    <input class="math-input" id="pizza-q" placeholder="ej: 15/8"
+                                        oninput="evalFrac('pizza-q','15/8','pizza-fb')">
+                                    <button class="check-btn"
+                                        onclick="evalFrac('pizza-q','15/8','pizza-fb',true)">Verificar</button>
+                                </div>
+                                <div class="inline-feedback" id="pizza-fb" style="margin-top:10px;"></div>
+                            </div>
+                            <div class="context-problem" style="border-color:rgba(28,201,160,.35);">
+                                <div class="problem-icon">💰</div>
+                                <h4>El ahorro del mes</h4>
+                                <p>Sebastián recibe $40.000 de mesada. Gasta <strong>3/8</strong> en comida,
+                                    <strong>1/4</strong> en transporte y ahorra el resto. ¿Qué fracción ahorra?
+                                </p>
+                                <div class="answer-row">
+                                    <input class="math-input" id="ahorro-q" placeholder="ej: 3/8"
+                                        oninput="evalFrac('ahorro-q','3/8','ahorro-fb')">
+                                    <button class="check-btn"
+                                        onclick="evalFrac('ahorro-q','3/8','ahorro-fb',true)">Verificar</button>
+                                </div>
+                                <div class="inline-feedback" id="ahorro-fb" style="margin-top:10px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /dev-grid -->
+
+                <!-- Ordering game -->
+                <div class="dev-card" style="margin-top:24px;">
+                    <div class="dev-card-header" style="background:#8E44AD;">🎯 Reto: Ordena de Menor a Mayor</div>
+                    <div class="dev-card-body">
+                        <div class="order-game">
+                            <p>Arrastra los números racionales y colócalos en la zona de orden de <strong>menor a
+                                    mayor</strong>. Cuando termines, haz clic en "Verificar".</p>
+                            <div class="order-items" id="order-source"></div>
+                            <p style="font-weight:700;color:var(--primary);margin-bottom:6px;">👇 Coloca aquí de menor a
+                                mayor:</p>
+                            <div class="order-zone" id="order-target"></div>
+                            <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                                <button class="check-btn" onclick="checkOrder()">✅ Verificar orden</button>
+                                <button class="check-btn" style="background:var(--accent1);" onclick="resetOrder()">🔄
+                                    Reiniciar</button>
+                            </div>
+                            <div id="order-feedback" style="margin-top:12px;font-weight:700;font-size:.9rem;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory game -->
+                <div class="dev-card" style="margin-top:24px;">
+                    <div class="dev-card-header" style="background:#27AE60;">🃏 Memoria: Fracciones = Decimales</div>
+                    <div class="dev-card-body">
+                        <p style="color:var(--text-light);font-size:.92rem;margin-bottom:16px;">Encuentra las parejas:
+                            cada fracción tiene su equivalente decimal o porcentaje. ¡Usa la menor cantidad de intentos!
+                        </p>
+                        <div class="memory-stats">
+                            <div class="mem-stat">🔄 Intentos: <span id="mem-attempts">0</span></div>
+                            <div class="mem-stat">✅ Pares: <span id="mem-matches">0</span>/6</div>
+                        </div>
+                        <div class="memory-grid" id="memory-grid"></div>
+                        <button class="check-btn" style="margin-top:16px;background:#27AE60;" onclick="initMemory()">🔄
+                            Nuevo juego</button>
+                    </div>
+                </div>
+
+                <!-- ACTIVIDAD GRUPAL 1 -->
+                <div class="group-activity">
+                    <h3>👥 Actividad Grupal 1: "La Fracción Viajera"</h3>
+                    <p style="opacity:.75;margin-bottom:8px;font-size:.92rem;">Instrucciones para realizar con tus
+                        compañeros (grupos de 3-4 estudiantes):</p>
+                    <div class="group-note">📋 <strong>Nota:</strong> La docente entregará una hoja con los ejercicios y
+                        materiales necesarios para esta actividad.</div>
+                    <div class="group-steps">
+                        <div class="group-step">
+                            <div class="step-num">1</div>
+                            <div>La docente asigna a cada grupo una fracción "secreta" (ej: 2/3, 5/6, 7/12…) mediante la
+                                hoja entregada.</div>
+                        </div>
+                        <div class="group-step">
+                            <div class="step-num">2</div>
+                            <div>Cada grupo expresa su fracción como <strong>decimal</strong>, como
+                                <strong>porcentaje</strong> y la ubica en una <strong>recta numérica</strong> dibujada
+                                en papel.
+                            </div>
+                        </div>
+                        <div class="group-step">
+                            <div class="step-num">3</div>
+                            <div>Creen un problema de la <strong>vida real</strong> donde aparezca esa fracción (receta,
+                                deporte, medidas del hogar…).</div>
+                        </div>
+                        <div class="group-step">
+                            <div class="step-num">4</div>
+                            <div>Cada grupo <strong>presenta su fracción</strong> al resto de la clase y los demás
+                                verifican los cálculos.</div>
+                        </div>
+                        <div class="group-step">
+                            <div class="step-num">5</div>
+                            <div>Entre todos, <strong>ordenan en el tablero</strong> todas las fracciones de menor a
+                                mayor. ¿Coincide con lo esperado?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACTIVIDAD GRUPAL 2 -->
+                <div class="group-activity" style="background:linear-gradient(135deg,#0d2b1e,#143d2a);margin-top:24px;">
+                    <h3>👥 Actividad Grupal 2: "El Mercado de Fracciones"</h3>
+                    <p style="opacity:.75;margin-bottom:8px;font-size:.92rem;">Dinámica de compra-venta con fracciones
+                        (grupos de 4 estudiantes):</p>
+                    <div class="group-note" style="background:rgba(28,201,160,.1);border-color:rgba(28,201,160,.25);">📋
+                        <strong>Nota:</strong> La docente entregará a cada grupo una hoja con los precios, productos y
+                        guía de ejercicios en fracciones para desarrollar la actividad.
+                    </div>
+                    <div class="group-steps">
+                        <div class="group-step">
+                            <div class="step-num" style="background:var(--accent2);">1</div>
+                            <div>La docente distribuye la hoja de trabajo. Cada grupo recibe un "presupuesto" expresado
+                                en fracción (ej: <strong>3/4</strong> de $80.000) y una lista de productos con precios
+                                fraccionarios.</div>
+                        </div>
+                        <div class="group-step">
+                            <div class="step-num" style="background:var(--accent2);">2</div>
+                            <div>El grupo debe <strong>sumar las fracciones</strong> de los productos que desea comprar
+                                (usando el método que prefieran: MCM, productos cruzados o decimal). Deben verificar que
+                                no excedan el presupuesto.</div>
+                        </div>
+                        <div class="group-step">
+                            <div class="step-num" style="background:var(--accent2);">3</div>
+                            <div>Calculen el <strong>cambio o vuelto</strong>: resten el total gastado al presupuesto.
+                                El resultado debe expresarse como fracción simplificada.</div>
+                        </div>
+                        <div class="group-step">
+                            <div class="step-num" style="background:var(--accent2);">4</div>
+                            <div>Classifiquen cada fracción del ejercicio: ¿es <strong>propia, impropia o
+                                    mixta</strong>? ¿Es homogénea o heterogénea con respecto a otras del grupo?</div>
+                        </div>
+                        <div class="group-step">
+                            <div class="step-num" style="background:var(--accent2);">5</div>
+                            <div>Presenten sus resultados al grupo. La docente evaluará si la suma es correcta, si la
+                                simplificación es adecuada y si la clasificación es acertada.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /tab-desarrollo -->
+
+            <!-- TAB 3: CIERRE (QUIZ) -->
+            <div class="tab-panel" id="tab-cierre">
+                <div class="quiz-container">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" id="quiz-progress" style="width:0%"></div>
+                    </div>
+
+                    <!-- Q1 -->
+                    <div class="quiz-q active" id="qq-0">
+                        <div class="quiz-q-num">PREGUNTA 1 DE 6</div>
+                        <div class="quiz-q-text">¿Cuál es el resultado de ²⁄₅ + ¹⁄₃?</div>
+                        <div class="quiz-options">
+                            <button class="quiz-option" onclick="selectQuiz(this,0,false)">A) 3/8</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,0,true)">B) 11/15</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,0,false)">C) 3/15</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,0,false)">D) 2/15</button>
+                        </div>
+                        <div class="quiz-feedback" id="qfb-0"></div>
+                        <div class="quiz-nav"><button class="btn-next" id="qnext-0" onclick="nextQuiz(1)">Siguiente
+                                →</button></div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="quiz-q" id="qq-1">
+                        <div class="quiz-q-num">PREGUNTA 2 DE 6</div>
+                        <div class="quiz-q-text">Un recipiente tiene ¾ de litro de jugo. Si repartes entre 3 personas
+                            iguales, ¿cuánto le toca a cada una?</div>
+                        <div class="quiz-options">
+                            <button class="quiz-option" onclick="selectQuiz(this,1,false)">A) 3/12</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,1,true)">B) 1/4 de litro</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,1,false)">C) 9/4 de litro</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,1,false)">D) 1/3 de litro</button>
+                        </div>
+                        <div class="quiz-feedback" id="qfb-1"></div>
+                        <div class="quiz-nav"><button class="btn-next" id="qnext-1" onclick="nextQuiz(2)">Siguiente
+                                →</button></div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="quiz-q" id="qq-2">
+                        <div class="quiz-q-num">PREGUNTA 3 DE 6</div>
+                        <div class="quiz-q-text">¿Cuál de los siguientes números es racional?</div>
+                        <div class="quiz-options">
+                            <button class="quiz-option" onclick="selectQuiz(this,2,false)">A) π (pi)</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,2,false)">B) √3</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,2,true)">C) √4</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,2,false)">D) √5</button>
+                        </div>
+                        <div class="quiz-feedback" id="qfb-2"></div>
+                        <div class="quiz-nav"><button class="btn-next" id="qnext-2" onclick="nextQuiz(3)">Siguiente
+                                →</button></div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="quiz-q" id="qq-3">
+                        <div class="quiz-q-num">PREGUNTA 4 DE 6</div>
+                        <div class="quiz-q-text">¿Qué fracción equivalente a 3/5 tiene denominador 20?</div>
+                        <div class="quiz-options">
+                            <button class="quiz-option" onclick="selectQuiz(this,3,false)">A) 9/20</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,3,true)">B) 12/20</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,3,false)">C) 15/20</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,3,false)">D) 6/20</button>
+                        </div>
+                        <div class="quiz-feedback" id="qfb-3"></div>
+                        <div class="quiz-nav"><button class="btn-next" id="qnext-3" onclick="nextQuiz(4)">Siguiente
+                                →</button></div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="quiz-q" id="qq-4">
+                        <div class="quiz-q-num">PREGUNTA 5 DE 6</div>
+                        <div class="quiz-q-text">¿Cuál es la representación decimal de ⁷⁄₈?</div>
+                        <div class="quiz-options">
+                            <button class="quiz-option" onclick="selectQuiz(this,4,false)">A) 0.7</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,4,false)">B) 0.78</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,4,true)">C) 0.875</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,4,false)">D) 0.87</button>
+                        </div>
+                        <div class="quiz-feedback" id="qfb-4"></div>
+                        <div class="quiz-nav"><button class="btn-next" id="qnext-4" onclick="nextQuiz(5)">Siguiente
+                                →</button></div>
+                    </div>
+
+                    <!-- Q6 -->
+                    <div class="quiz-q" id="qq-5">
+                        <div class="quiz-q-num">PREGUNTA 6 DE 6</div>
+                        <div class="quiz-q-text">En una encuesta, el 40% prefiere matemáticas. ¿Cómo se expresa como
+                            fracción simplificada?</div>
+                        <div class="quiz-options">
+                            <button class="quiz-option" onclick="selectQuiz(this,5,false)">A) 40/100</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,5,true)">B) 2/5</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,5,false)">C) 4/5</button>
+                            <button class="quiz-option" onclick="selectQuiz(this,5,false)">D) 8/20</button>
+                        </div>
+                        <div class="quiz-feedback" id="qfb-5"></div>
+                        <div class="quiz-nav"><button class="btn-next" id="qnext-5" onclick="showResults()">Ver
+                                resultados 🏆</button></div>
+                    </div>
+
+                    <!-- RESULTS -->
+                    <div class="quiz-results" id="quiz-results">
+                        <div class="result-emoji" id="result-emoji">🏆</div>
+                        <div class="result-score" id="result-score">0/6</div>
+                        <div class="result-label" id="result-label">¡Sigue practicando!</div>
+                        <div class="result-bars">
+                            <div class="result-bar">
+                                <div class="val" id="res-correct">0</div>
+                                <div class="lbl">Correctas</div>
+                            </div>
+                            <div class="result-bar">
+                                <div class="val" id="res-wrong">0</div>
+                                <div class="lbl">Incorrectas</div>
+                            </div>
+                            <div class="result-bar">
+                                <div class="val" id="res-pct">0%</div>
+                                <div class="lbl">Porcentaje</div>
+                            </div>
+                        </div>
+                        <button class="btn-reset" onclick="resetQuiz()">🔄 Intentar de nuevo</button>
+                    </div>
+
+                    <!-- REFLECTION -->
+                    <div class="reflection-section">
+                        <h4>🪞 Autoevaluación y Reflexión</h4>
+                        <p style="font-size:.9rem;color:var(--text-light);margin-bottom:14px;">¿Cómo te sientes con el
+                            tema? Califica tu comprensión:</p>
+                        <div class="self-eval" id="stars">
+                            <span class="eval-star" onclick="rateSelf(1)">⭐</span>
+                            <span class="eval-star" onclick="rateSelf(2)">⭐</span>
+                            <span class="eval-star" onclick="rateSelf(3)">⭐</span>
+                            <span class="eval-star" onclick="rateSelf(4)">⭐</span>
+                            <span class="eval-star" onclick="rateSelf(5)">⭐</span>
+                        </div>
+                        <p style="font-size:.9rem;color:var(--text-light);margin-bottom:10px;">Escribe tu reflexión:
+                            ¿Qué aprendiste hoy? ¿Qué te pareció difícil?</p>
+                        <textarea class="reflection-area" id="reflection-text"
+                            placeholder="Escribe tu reflexión aquí..."></textarea>
+                        <div style="margin-top:14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+                            <button class="save-reflection" onclick="saveReflection()">💾 Guardar reflexión</button>
+                            <span id="save-confirm"
+                                style="font-size:.86rem;color:var(--accent2);font-weight:700;display:none;">✅ ¡Reflexión
+                                guardada!</span>
+                        </div>
+                    </div>
+                </div><!-- /quiz-container -->
+            </div><!-- /tab-cierre -->
+
+        </div><!-- /container -->
+    </section>
+
+    <!-- RUBRIC -->
+    <section id="rubric">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📋 Evaluación</span>
+                <h2 class="section-title">Rúbrica de Evaluación</h2>
+                <p class="section-desc">Criterios para medir tus logros en esta unidad. ¡Apunta siempre al nivel
+                    Excelente!
+                    Ahora, copia en tu cuaderno el criterio con el que más te identifiques y escribe por qué crees que
+                    te representa.</p>
+            </div>
+            <div class="rubric-table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Criterio / Indicador</th>
+                            <th><span class="level-badge level-4">⭐ Excelente (4)</span></th>
+                            <th><span class="level-badge level-3">✅ Satisfactorio (3)</span></th>
+                            <th><span class="level-badge level-2">⚠️ En proceso (2)</span></th>
+                            <th><span class="level-badge level-1">❌ Inicial (1)</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Comprensión conceptual</strong><br><small
+                                    style="color:var(--text-muted);font-weight:400;">Identifica y clasifica números
+                                    racionales</small></td>
+                            <td>Define con precisión, distingue racionales de irracionales y da ejemplos originales.
+                            </td>
+                            <td>Define correctamente con mínimos errores.</td>
+                            <td>Define parcialmente y comete errores.</td>
+                            <td>No distingue los racionales o confunde conceptos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Operaciones con fracciones</strong><br><small
+                                    style="color:var(--text-muted);font-weight:400;">Suma, resta, multiplica y
+                                    divide</small></td>
+                            <td>Realiza todas las operaciones correctamente y simplifica siempre.</td>
+                            <td>Opera correctamente con pequeños errores de simplificación.</td>
+                            <td>Opera algunas; comete errores procedimentales.</td>
+                            <td>No domina los procedimientos básicos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Resolución de problemas</strong><br><small
+                                    style="color:var(--text-muted);font-weight:400;">Aplica en contextos reales</small>
+                            </td>
+                            <td>Resuelve problemas complejos, justifica pasos y verifica solución.</td>
+                            <td>Resuelve problemas cotidianos con proceso claro.</td>
+                            <td>Comprende el problema pero comete errores.</td>
+                            <td>No logra plantear ni resolver problemas.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Representación</strong><br><small
+                                    style="color:var(--text-muted);font-weight:400;">Fracción, decimal,
+                                    porcentaje</small></td>
+                            <td>Convierte fluidamente entre las tres formas sin errores.</td>
+                            <td>Convierte con errores menores.</td>
+                            <td>Convierte solo entre algunas formas.</td>
+                            <td>No logra convertir entre representaciones.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Participación y actitud</strong><br><small
+                                    style="color:var(--text-muted);font-weight:400;">Colaboración y
+                                    perseverancia</small></td>
+                            <td>Lidera actividades, ayuda a compañeros y muestra entusiasmo constante.</td>
+                            <td>Participa activamente y trabaja bien en equipo.</td>
+                            <td>Participa cuando se le solicita.</td>
+                            <td>Baja participación, dificulta la dinámica grupal.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="text-align:center;margin-top:24px;color:rgba(255,255,255,.4);font-size:.88rem;">
+                📌 <strong style="color:rgba(255,255,255,.6);">Escala de valoración:</strong> Excelente (4) |
+                Satisfactorio (3) | En proceso (2) | Inicial (1) — Puntaje máximo: <strong
+                    style="color:var(--secondary);">20 puntos</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-icons">🔢 ➕ ➖ ✖️ ➗</div>
+        <p><strong>Unidad Didáctica Virtual: Números Racionales</strong></p>
+        <p style="margin-top:6px;">Diseñada con ❤️ para estudiantes de 7° grado · Estándares MEN Colombia</p>
+        <p style="margin-top:6px;opacity:.35;font-size:.78rem;">Matemáticas · Números y Operaciones · DBA 1–3 Séptimo
+            Grado</p>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+    <script>
+        // Method accordion for suma/resta
+        function toggleMethod(header) {
+            const body = header.nextElementSibling;
+            const isOpen = body.classList.contains('open');
+            document.querySelectorAll('.method-body').forEach(b => b.classList.remove('open'));
+            document.querySelectorAll('.m-toggle').forEach(t => { t.textContent = '▼'; t.style.transform = ''; });
+            if (!isOpen) {
+                body.classList.add('open');
+                header.querySelector('.m-toggle').textContent = '▼';
+                header.querySelector('.m-toggle').style.transform = 'rotate(180deg)';
+            }
+        }
+        // Extend presaberes for 7 questions
+        const pTotal = 7;
+    </script>
+</body>
+
+</html>
